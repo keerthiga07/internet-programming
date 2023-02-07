@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title></title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <style>
+            label{
+               font-family: cursive;
+               color : #9966ff;
+            }
+            table{
+                border:1px solid black;
+                font-family: serif;
+                margin-left: 10px;
+            }
+        </style>
+       <link rel="stylesheet" href="style1.css">
+    </head>
+    <body>
+    <div class="center">
+         <input type="checkbox" id="show">
+         <label for="show" class="show-btn">Register Now</label>
+         <div class="container">
+            <label for="show" class="close-btn fas fa-times" title="close"></label>
+            
+
+ 
+ 
+       
+        <h1 style="text-align: center">Registration form</h1>
+        <table>
+            <tr>
+                <td><label for="1">full name</label>
+                    <input type="text" name="1" required>
+            </tr>
+            <tr>
+                <td><label for="2">date of birth</label>
+                    <input type="date" name="2"></td></tr>
+        <tr>
+            <td><label for="5">gender</label>
+                <input type="radio" id="1" name="5">male
+                <input type="radio" id="2" name="5">female</td>
+        </tr>
+        <tr>
+            <td> <label for="6">city</label>
+        <input type="text" name="6"></td>
+        </tr>
+        <tr>
+            <td>  <label for="3">state</label>
+                <input type="text" name="3"></td></tr>
+        <tr>
+            <td>  <label for="8">email</label>
+        <input type="email" name="8"></td></tr>
+        <tr><td> <label for="9">phone no</label>
+                <input type="tel" name="9"></td></tr>
+        <tr><td> <label for="10">institute</label>
+                <input type="text" name="10"></td></tr>
+        <tr><td> <label for="11">qualification</label>
+        <select id="1">
+            <option>high school</option>
+            <option>graduate</option>
+            <option>SSLC</option>
+        </select><br></td></tr>
+        <tr>
+            <td> <label for="0">course</label>
+                <input type="checkbox" required>c++ <input type="checkbox" >html <input type="checkbox" >java <input type="checkbox" >css <input type="checkbox" >c <input type="checkbox" >php
+            </td>
+        </tr>
+        <tr><td>  <input type="checkbox"><a href="rowspan.html">terms and conditions</a></td></tr>
+        <tr><td style="text-align: center">  <button onclick="window.location.href='welcome.html',function1()" >  submit </button>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>  
+       
+       
+    </body>
+    <script>
+        function function1(){
+            window.alert("REGISTER SUCCESSFULLY")
+        }
+    </script>
+</html>
