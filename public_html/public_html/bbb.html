@@ -1,0 +1,42 @@
+<html>
+<body>
+   
+   <p id = "demo"></p>
+   <script>
+      let demo = document.getElementById("demo");
+      var emailID;
+      function validateEmail(emailID) {
+         atpos = emailID.indexOf("@");
+         dotpos = emailID.lastIndexOf(".");
+         if (atpos < 1 || ( dotpos - atpos < 5)) {
+            document.write(" Invalid email ID");
+            document.write("<br>");
+            return false;
+         }
+         document.write("Valid email ID");
+         document.write("<br>");
+         return true;
+      }
+      document.write("Email ID Entered: iswarya@gmail.com");
+      document.write("<br>");
+      document.write(validateEmail("aabbbc@gmail.com"));
+      document.write("<br>");
+      
+      document.write("Email ID Entered: priya@gmail.com");
+      document.write("<br>");
+      document.write(validateEmail("zxcvvv@gmail.com"));
+      document.write("<br>");
+
+      document.write("Email ID Entered: priyanka+gmail.com");
+      document.write("<br>");
+      document.write(validateEmail("priyanka+gmail.com"));
+      document.write("<br>");
+      
+      
+
+
+
+
+   </script>
+</body>
+</html>

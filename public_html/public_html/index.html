@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+   <h4>Find the duplicate values in a JavaScript array</h4>
+   <p>[12,3,5,6,8,9,5,6]</p>
+   <p id="rep"></p>
+   <script>
+  let array = [12,3,5,6,8,9,5,6];
+      let index = 0, newarr = [];
+      const length = array.length;
+      function findDuplicates(arr) {
+         for (let i = 0; i < length - 1; i++) {
+
+           for (let j = i + 1; j < length; j++) {
+
+            if (arr[i] === arr[j]) {
+                  newarr[index] = arr[i];
+                  index++;
+               }
+            }
+         }
+         return newarr;
+      }
+      document.getElementById('rep').innerHTML = 'Duplicate values are: <b>' + findDuplicates(array) + '</b>';
+   </script>
+</body>
+</html> 
