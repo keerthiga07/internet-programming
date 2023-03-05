@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BACKGROUND COLOR</title>
+        <script src="C:\Users\USER\Documents\NetBeansProjects\jquery.txt"></script>
+        <style>
+            div{
+                border:2px solid blue;
+                text-align: center;
+                margin-left: 350px;
+                margin-right: 350px;
+                padding: 15%;
+                background-color:rgb(555,100,120);
+            }
+            button{
+                margin-top: 20px;
+                margin-left: 42%;
+                font-family:cursivetimesnewroman;
+                font-size: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <H1 style="text-align: center">BACKGROUND COLOR CHANGER</H1>
+        <div></div>
+        <button>COLOR CHANGER</button>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                var x=Math.floor(Math.random()*255);
+                var y=Math.floor(Math.random()*255);
+                var z=Math.floor(Math.random()*255);
+                
+               $("div").css("background-color",'rgb('+x+','+y+','+z+')'); 
+            });
+        });
+    </script>
+    </body>
+</html>
