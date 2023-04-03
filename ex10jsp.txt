@@ -1,0 +1,57 @@
+jsp:
+<%--
+    Document   : projsp
+    Created on : 29 Mar, 2023, 11:29:59 AM
+    Author     : Administrator
+--%>
+
+<%@ page language="java" contentType="text/html; charset=US-ASCII"
+    pageEncoding="US-ASCII"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "https://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<title>Home Page</title>
+<%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<%@page import="ex10pack.student1"%>
+
+<%@page import="java.util.*"%>
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+       
+       
+    </head>
+    <body>
+        <%
+           
+            student1 st=new student1("johndoe",90,"jhon.doe@exmaple.com");
+            student1 st1=new student1("janesmith",85,"john.smith@example.com");
+             student1 st2=new student1("bob jhonson",95,"bob.jhonson@example.com");
+            ArrayList <student1> obj=new ArrayList<student1>();
+            obj.add(st);
+            obj.add(st1);
+            obj.add(st2);
+// for(student a:obj){
+// out.println(a.name);
+// }
+
+pageContext.setAttribute("obj", obj);
+        %>
+        <table border="2px"><tr><th>Name</th><th>grade</th><th>email</th></tr>
+        <c:forEach items="${pageScope.obj}" var="i">
+           
+                <tr> <td>${i.getName()}</td>
+                    <td>${i.getgrade()}</td>
+                    <td>${i.getemail()}</td>
+                </tr>
+        </c:forEach>  
+        </table>
+       </table>
+    </body>
+
+
+
+</html>
