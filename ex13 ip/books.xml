@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+ <?xml-stylesheet type="text/xsl" href="style.xsl"?> 
+ <books> 
+ <book> 
+     <title>hear yourself</title> 
+     <author>prem rawat</author> 
+     <year>1989</year> 
+ </book> 
+  
+ <book> 
+     
+     <title>a passage to india</title> 
+     <author>foster</author> 
+     <year>1990</year> 
+ </book> 
+  
+ <book> 
+      
+     <title>a revenue stamp</title> 
+     <author>amritha</author> 
+     <year>2003</year> 
+ </book> 
+  
+ <book> 
+      
+     <title>tom thonas</title> 
+     <author>henry fielding</author> 
+     <year>2008</year> 
+ </book> 
+  
+ <book> 
+     <title>wings of fire</title> 
+     <author>abdulkalam</author> 
+     <year>1989</year> 
+ </book> 
+ </books>
