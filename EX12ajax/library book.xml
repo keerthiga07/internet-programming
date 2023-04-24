@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<books>
+  <book id="001">
+    <title>The Great wall</title>
+    <author>F. Scott fiz</author>
+    <publisher>Charles Scribner</publisher>
+    <price>200</price>
+  </book>
+  <book id="002">
+    <title>To Kill a Mockingbird</title>
+    <author>Hooper Lee</author>
+    <publisher>J.B Hooper </publisher>
+    <price>329</price>
+  </book>
+  <book id="003">
+    <title>Pride and Prejudice</title>
+    <author>Jane</author>
+    <publisher>Halsry</publisher>
+    <price>599</price>
+  </book>
+  <book id="004">
+    <title>The Catcher in the Rye</title>
+    <author>J. D. Salinger</author>
+    <publisher>Brown and co</publisher>
+    <price>99</price>
+  </book>
+  <book id="005">
+    <title>1984</title>
+    <author>George Orwell</author>
+    <publisher>Secker lee</publisher>
+    <price>8.49</price>
+  </book>
+</books>
+</root>
+
